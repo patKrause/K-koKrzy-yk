@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Menu
 {
-    public partial class Form2 : Form
+    public partial class Game : Form
     {
         bool turn = true;
-        public Form2()
+        public Game()
         {
             InitializeComponent();
         }
@@ -27,6 +27,7 @@ namespace Menu
             else
                 b.Text = "O";
             turn = !turn;
+            b.Enabled = false;
 
         }
     }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Menu
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace Menu
         private void button1_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Form2 form2 = new Form2();
+            Game form2 = new Game();
             form2.ShowDialog();
             this.Close();
         }
