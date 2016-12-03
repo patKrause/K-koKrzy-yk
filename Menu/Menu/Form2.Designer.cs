@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.A1 = new System.Windows.Forms.Button();
             this.A2 = new System.Windows.Forms.Button();
             this.A3 = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.A1.Size = new System.Drawing.Size(75, 75);
             this.A1.TabIndex = 0;
             this.A1.UseVisualStyleBackColor = true;
+            this.A1.Click += new System.EventHandler(this.click_click);
             // 
             // A2
             // 
@@ -56,6 +58,7 @@
             this.A2.Size = new System.Drawing.Size(75, 75);
             this.A2.TabIndex = 1;
             this.A2.UseVisualStyleBackColor = true;
+            this.A2.Click += new System.EventHandler(this.click_click);
             // 
             // A3
             // 
@@ -65,6 +68,7 @@
             this.A3.Size = new System.Drawing.Size(75, 75);
             this.A3.TabIndex = 2;
             this.A3.UseVisualStyleBackColor = true;
+            this.A3.Click += new System.EventHandler(this.click_click);
             // 
             // B1
             // 
@@ -74,15 +78,17 @@
             this.B1.Size = new System.Drawing.Size(75, 75);
             this.B1.TabIndex = 3;
             this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.click_click);
             // 
             // B2
             // 
             this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.B2.Location = new System.Drawing.Point(180, 93);
+            this.B2.Location = new System.Drawing.Point(181, 93);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(75, 75);
             this.B2.TabIndex = 4;
             this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.click_click);
             // 
             // B3
             // 
@@ -92,6 +98,7 @@
             this.B3.Size = new System.Drawing.Size(75, 75);
             this.B3.TabIndex = 5;
             this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.click_click);
             // 
             // C1
             // 
@@ -101,6 +108,7 @@
             this.C1.Size = new System.Drawing.Size(75, 75);
             this.C1.TabIndex = 6;
             this.C1.UseVisualStyleBackColor = true;
+            this.C1.Click += new System.EventHandler(this.click_click);
             // 
             // C2
             // 
@@ -110,6 +118,7 @@
             this.C2.Size = new System.Drawing.Size(75, 75);
             this.C2.TabIndex = 7;
             this.C2.UseVisualStyleBackColor = true;
+            this.C2.Click += new System.EventHandler(this.click_click);
             // 
             // C3
             // 
@@ -119,6 +128,7 @@
             this.C3.Size = new System.Drawing.Size(75, 75);
             this.C3.TabIndex = 8;
             this.C3.UseVisualStyleBackColor = true;
+            this.C3.Click += new System.EventHandler(this.click_click);
             // 
             // Form2
             // 
@@ -134,6 +144,7 @@
             this.Controls.Add(this.A3);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.A1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

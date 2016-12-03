@@ -12,9 +12,22 @@ namespace Menu
 {
     public partial class Form2 : Form
     {
+        bool turn = true;
         public Form2()
         {
             InitializeComponent();
+        }
+
+
+        private void click_click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (turn)
+                b.Text = "X";
+            else
+                b.Text = "O";
+            turn = !turn;
+
         }
     }
 }
