@@ -26,5 +26,14 @@ namespace Menu
         {
             MessageBox.Show("Patryk Krause 2016", "O mnie");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            this.Close();
+        }
+
     }
 }
