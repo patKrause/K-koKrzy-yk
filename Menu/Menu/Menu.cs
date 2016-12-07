@@ -33,6 +33,7 @@ namespace Menu
             Game form2 = new Game();
             form2.ShowDialog();
             this.Close();
+            
         }
 
     }

@@ -8,10 +8,12 @@ namespace Menu
 {
     class Winner
     {
-        public static void sprawdzKtoWygr()
+        
+        public static void sprawdzKtoWygr(Game game)
         {
             bool wygrany = false;
-            if ((A1.Text == B1.Text) && (B1.Text == C1.Text)) wygrany = true;
+            if ((game.A1.Text == game.B1.Text) && (game.B1.Text == game.C1.Text)) 
+                wygrany = true;
 
         }
     }

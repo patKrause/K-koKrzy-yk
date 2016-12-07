@@ -29,7 +29,7 @@ namespace Menu
             tura = !tura;
             b.Enabled = false;
 
-            Winner.sprawdzKtoWygr();
+            Winner.sprawdzKtoWygr(this);
 
         }
 
