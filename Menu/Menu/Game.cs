@@ -31,6 +31,7 @@ namespace Menu
 
 
             sprawdzKtoWygr();
+            
         }
         private void sprawdzKtoWygr()
         {
@@ -92,6 +93,7 @@ namespace Menu
                 B2.BackColor = Color.Green;
                 C1.BackColor = Color.Green;
             } 
+            
             if (wygral)
             {
                 string wygrany = "";
@@ -100,9 +102,20 @@ namespace Menu
                 else
                     wygrany = "X";
                 MessageBox.Show(wygrany + " Wygrał", "Finito!");
+                zerowanie();
             }
             
 
+        }
+        private void zerowanie()
+        {
+            foreach (Control x in Controls)
+            {
+                Button b = (Button)x;
+                b.Enabled = true;
+                
+                b.Text = "";
+            }
         }
     }
 }
