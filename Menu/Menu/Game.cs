@@ -35,19 +35,39 @@ namespace Menu
         private void sprawdzKtoWygr()
         {
             bool wygral = false;
-            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
-                wygral = true;
-            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
-                wygral = true;
-            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
-                wygral = true;
 
-            if ((A1.Text == A2.Text) && (A2.Text == A3.Text))
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text) && (!A1.Enabled))
+            {   
+                wygral = true; 
+                A1.BackColor = Color.Green; 
+                B1.BackColor = Color.Green;
+                C1.BackColor = Color.Green;
+            } else
+                if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!B1.Enabled))
+            {
                 wygral = true;
-            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+                A2.BackColor = Color.Green;
+                B2.BackColor = Color.Green;
+                C2.BackColor = Color.Green;
+            } else
+                    if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (!C1.Enabled))
+            {
                 wygral = true;
-            if ((C1.Text == C2.Text) && (C2.Text == C3.Text))
-                wygral = true;
+                A3.BackColor = Color.Green;
+                B3.BackColor = Color.Green;
+                C3.BackColor = Color.Green;
+            }
+            if (wygral)
+            {
+                string wygrany = "";
+                if (tura)
+                    wygrany = "O";
+                else
+                    wygrany = "X";
+                MessageBox.Show(wygrany + " Wygrał", "Finito");
+            }
+            
+
         }
     }
 }
