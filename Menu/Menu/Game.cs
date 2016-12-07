@@ -43,14 +43,14 @@ namespace Menu
                 B1.BackColor = Color.Green;
                 C1.BackColor = Color.Green;
             } else
-                if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!B1.Enabled))
+                if ((A2.Text == B2.Text) && (B2.Text == C2.Text) && (!A2.Enabled))
             {
                 wygral = true;
                 A2.BackColor = Color.Green;
                 B2.BackColor = Color.Green;
                 C2.BackColor = Color.Green;
             } else
-                    if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (!C1.Enabled))
+                    if ((A3.Text == B3.Text) && (B3.Text == C3.Text) && (!A3.Enabled))
             {
                 wygral = true;
                 A3.BackColor = Color.Green;
