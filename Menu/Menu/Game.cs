@@ -12,7 +12,8 @@ namespace Menu
 {
     public partial class Game : Form
     {
-        bool tura = true;
+        bool ruch = true;
+        int tura = 0;
         public Game()
         {
             InitializeComponent();
@@ -22,15 +23,17 @@ namespace Menu
         private void click_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (tura)
+            if (ruch)
                 b.Text = "X";
             else
                 b.Text = "O";
-            tura = !tura;
+            tura++;
+            ruch = !ruch;
             b.Enabled = false;
 
 
             sprawdzKtoWygr();
+            if (tura == 9) MessageBox.Show("Remis!", "Opps!");
             
         }
         private void sprawdzKtoWygr()
@@ -97,7 +100,7 @@ namespace Menu
             if (wygral)
             {
                 string wygrany = "";
-                if (tura)
+                if (ruch)
                     wygrany = "O";
                 else
                     wygrany = "X";
@@ -115,6 +118,7 @@ namespace Menu
                 b.Enabled = true;
                 b.BackColor = System.Drawing.Color.Transparent;
                 b.Text = "";
+                tura = 0;
             }
         }
     }
