@@ -41,8 +41,13 @@ namespace Menu
                 wygral = true;
             if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
                 wygral = true;
-            
 
+            if ((A1.Text == A2.Text) && (A2.Text == A3.Text))
+                wygral = true;
+            if ((B1.Text == B2.Text) && (B2.Text == B3.Text))
+                wygral = true;
+            if ((C1.Text == C2.Text) && (C2.Text == C3.Text))
+                wygral = true;
         }
     }
 }

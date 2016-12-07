@@ -158,14 +158,14 @@
 
         #endregion
 
-        public System.Windows.Forms.Button A1;
-        public System.Windows.Forms.Button A2;
-        public System.Windows.Forms.Button A3;
-        public System.Windows.Forms.Button B1;
-        public System.Windows.Forms.Button B2;
-        public System.Windows.Forms.Button B3;
-        public System.Windows.Forms.Button C1;
-        public System.Windows.Forms.Button C2;
-        public System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Button A1;
+        private System.Windows.Forms.Button A2;
+        private System.Windows.Forms.Button A3;
+        private System.Windows.Forms.Button B1;
+        private System.Windows.Forms.Button B2;
+        private System.Windows.Forms.Button B3;
+        private System.Windows.Forms.Button C1;
+        private System.Windows.Forms.Button C2;
+        private System.Windows.Forms.Button C3;
     }
 }
