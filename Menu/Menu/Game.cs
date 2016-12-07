@@ -113,7 +113,7 @@ namespace Menu
             {
                 Button b = (Button)x;
                 b.Enabled = true;
-                
+                b.BackColor = System.Drawing.Color.Transparent;
                 b.Text = "";
             }
         }
