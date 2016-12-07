@@ -29,9 +29,20 @@ namespace Menu
             tura = !tura;
             b.Enabled = false;
 
-            Winner.sprawdzKtoWygr(this);
+
+            sprawdzKtoWygr();
+        }
+        private void sprawdzKtoWygr()
+        {
+            bool wygral = false;
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
+                wygral = true;
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
+                wygral = true;
+            if ((A1.Text == B1.Text) && (B1.Text == C1.Text))
+                wygral = true;
+            
 
         }
-
     }
 }
