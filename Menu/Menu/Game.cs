@@ -77,21 +77,21 @@ namespace Menu
                 C1.BackColor = Color.Green;
                 C2.BackColor = Color.Green;
                 C3.BackColor = Color.Green;
-            }
+            } else
             if ((A1.Text == B2.Text) && (B2.Text == C3.Text) && (!A1.Enabled))
             {
                 wygral = true;
                 A1.BackColor = Color.Green;
                 B2.BackColor = Color.Green;
                 C3.BackColor = Color.Green;
-            }
+            } else
             if ((A3.Text == B2.Text) && (B2.Text == C1.Text) && (!A3.Enabled))
             {
                 wygral = true;
                 A3.BackColor = Color.Green;
                 B2.BackColor = Color.Green;
                 C1.BackColor = Color.Green;
-            }
+            } 
             if (wygral)
             {
                 string wygrany = "";
