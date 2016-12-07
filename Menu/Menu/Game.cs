@@ -12,7 +12,7 @@ namespace Menu
 {
     public partial class Game : Form
     {
-        bool turn = true;
+        bool tura = true;
         public Game()
         {
             InitializeComponent();
@@ -22,13 +22,16 @@ namespace Menu
         private void click_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (turn)
+            if (tura)
                 b.Text = "X";
             else
                 b.Text = "O";
-            turn = !turn;
+            tura = !tura;
             b.Enabled = false;
 
+            Winner.sprawdzKtoWygr();
+
         }
+
     }
 }
