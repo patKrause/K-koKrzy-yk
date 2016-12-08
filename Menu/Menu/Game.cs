@@ -24,9 +24,9 @@ namespace Menu
         {
             Button b = (Button)sender;
             if (ruch)
-                b.Text = "X";
-            else
                 b.Text = "O";
+            else
+                b.Text = "X";
             tura++;
             ruch = !ruch;
             b.Enabled = false;
@@ -102,13 +102,13 @@ namespace Menu
                 string wygrany = "";
                 if (ruch)
                 {
-                    wygrany = nick1.Text;
-                    p1.Text = (Int32.Parse(p1.Text) + 1).ToString();
+                    wygrany = nick2.Text;
+                    p2.Text = (Int32.Parse(p2.Text) + 1).ToString();
                 }
                 else
                 {
-                    wygrany = nick2.Text;
-                    p2.Text = (Int32.Parse(p2.Text) + 1).ToString();
+                    wygrany = nick1.Text;
+                    p1.Text = (Int32.Parse(p1.Text) + 1).ToString();
                 }
                 MessageBox.Show(wygrany + " Wygrał", "Finito!");
                 zerowanie();
@@ -151,21 +151,31 @@ namespace Menu
         private void pokazWej(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (ruch)
-                b.Text = "X";
+            if (b.Enabled)
+            {
+                if (ruch)
+                    b.Text = "O";
                 else
-                b.Text = "O";
+                    b.Text = "X";
+            }
             
         }
 
         private void ukryjWej(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (ruch)
-                b.Text = "";
-            else
-                b.Text = "";
+            if (b.Enabled)
+            {
+                if (ruch)
+                    b.Text = "";
+                else
+                    b.Text = "";
+            }
 
         }
+
+
+
+ 
     }
 }

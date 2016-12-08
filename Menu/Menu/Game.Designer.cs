@@ -45,6 +45,10 @@
             this.nick2 = new System.Windows.Forms.TextBox();
             this.Restart = new System.Windows.Forms.Button();
             this.nick1 = new System.Windows.Forms.TextBox();
+            this.w1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.O = new System.Windows.Forms.Label();
+            this.X = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // A1
@@ -179,7 +183,7 @@
             // p1
             // 
             this.p1.AutoSize = true;
-            this.p1.Location = new System.Drawing.Point(39, 73);
+            this.p1.Location = new System.Drawing.Point(58, 95);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(13, 13);
             this.p1.TabIndex = 11;
@@ -188,7 +192,7 @@
             // p2
             // 
             this.p2.AutoSize = true;
-            this.p2.Location = new System.Drawing.Point(376, 73);
+            this.p2.Location = new System.Drawing.Point(392, 95);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(13, 13);
             this.p2.TabIndex = 12;
@@ -196,7 +200,8 @@
             // 
             // nick2
             // 
-            this.nick2.Location = new System.Drawing.Point(341, 27);
+            this.nick2.Location = new System.Drawing.Point(341, 52);
+            this.nick2.MaxLength = 10;
             this.nick2.Name = "nick2";
             this.nick2.Size = new System.Drawing.Size(81, 20);
             this.nick2.TabIndex = 14;
@@ -215,12 +220,53 @@
             // 
             // nick1
             // 
-            this.nick1.Location = new System.Drawing.Point(13, 27);
+            this.nick1.Location = new System.Drawing.Point(7, 52);
+            this.nick1.MaxLength = 10;
             this.nick1.Name = "nick1";
             this.nick1.Size = new System.Drawing.Size(81, 20);
             this.nick1.TabIndex = 16;
             this.nick1.Text = "Gracz1";
             this.nick1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // w1
+            // 
+            this.w1.AutoSize = true;
+            this.w1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.w1.Location = new System.Drawing.Point(10, 93);
+            this.w1.Name = "w1";
+            this.w1.Size = new System.Drawing.Size(48, 15);
+            this.w1.TabIndex = 17;
+            this.w1.Text = "Wynik:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(344, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 15);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Wynik:";
+            // 
+            // O
+            // 
+            this.O.AutoSize = true;
+            this.O.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.O.Location = new System.Drawing.Point(24, 12);
+            this.O.Name = "O";
+            this.O.Size = new System.Drawing.Size(39, 33);
+            this.O.TabIndex = 19;
+            this.O.Text = "O";
+            // 
+            // X
+            // 
+            this.X.AutoSize = true;
+            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.X.Location = new System.Drawing.Point(369, 12);
+            this.X.Name = "X";
+            this.X.Size = new System.Drawing.Size(35, 33);
+            this.X.TabIndex = 20;
+            this.X.Text = "X";
             // 
             // Game
             // 
@@ -228,6 +274,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(434, 292);
+            this.Controls.Add(this.X);
+            this.Controls.Add(this.O);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.w1);
             this.Controls.Add(this.nick1);
             this.Controls.Add(this.Restart);
             this.Controls.Add(this.nick2);
@@ -274,5 +324,9 @@
         private System.Windows.Forms.TextBox nick2;
         private System.Windows.Forms.Button Restart;
         private System.Windows.Forms.TextBox nick1;
+        private System.Windows.Forms.Label w1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label O;
+        private System.Windows.Forms.Label X;
     }
 }
