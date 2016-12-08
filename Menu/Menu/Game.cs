@@ -119,6 +119,7 @@ namespace Menu
                 {
                     MessageBox.Show("Remis!", "Opps!");
                     liczRemis.Text = (Int32.Parse(liczRemis.Text) + 1).ToString();
+                    zerowanie();
                 }
             }
             
@@ -142,6 +143,13 @@ namespace Menu
         private void Game_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void wynikRestart(object sender, EventArgs e)
+        {
+            p1.Text = "0";
+            p2.Text = "0";
+            liczRemis.Text = "0";
         }
     }
 }

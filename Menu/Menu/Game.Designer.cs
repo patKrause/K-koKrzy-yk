@@ -44,6 +44,7 @@
             this.p2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Restart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // A1
@@ -189,12 +190,23 @@
             this.textBox2.Size = new System.Drawing.Size(81, 20);
             this.textBox2.TabIndex = 14;
             // 
+            // Restart
+            // 
+            this.Restart.Location = new System.Drawing.Point(13, 257);
+            this.Restart.Name = "Restart";
+            this.Restart.Size = new System.Drawing.Size(75, 23);
+            this.Restart.TabIndex = 15;
+            this.Restart.Text = "Restart";
+            this.Restart.UseVisualStyleBackColor = true;
+            this.Restart.Click += new System.EventHandler(this.wynikRestart);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(434, 292);
+            this.Controls.Add(this.Restart);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.p2);
@@ -240,5 +252,6 @@
         private System.Windows.Forms.Label p2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button Restart;
     }
 }
