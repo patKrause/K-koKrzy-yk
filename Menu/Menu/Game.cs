@@ -33,8 +33,6 @@ namespace Menu
 
 
             sprawdzKtoWygr();
-            
-            
         }
         private void sprawdzKtoWygr()
         {
@@ -103,7 +101,7 @@ namespace Menu
                 if (ruch)
                 {
                     wygrany = nick2.Text;
-                    p2.Text = (Int32.Parse(p2.Text) + 1).ToString();
+                    p2.Text = (Int32.Parse(p2.Text) + 1).ToString();   
                 }
                 else
                 {
@@ -112,6 +110,7 @@ namespace Menu
                 }
                 MessageBox.Show(wygrany + " Wygrał", "Finito!");
                 zerowanie();
+                
             }
             else
             {
@@ -120,6 +119,7 @@ namespace Menu
                     MessageBox.Show("Remis!", "Opps!");
                     liczRemis.Text = (Int32.Parse(liczRemis.Text) + 1).ToString();
                     zerowanie();
+                    
                 }
             }
             
@@ -127,8 +127,10 @@ namespace Menu
         }
         private void zerowanie()
         {
+            ruch = !ruch;
             foreach (Control x in Controls)
             {
+                ruch = !ruch;
                 if (x is Button)
                 {
                     Button b = (Button)x;
@@ -179,8 +181,8 @@ namespace Menu
         private void Powrot_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Menu form2 = new Menu();
-            form2.ShowDialog();
+            Menu form1 = new Menu();
+            form1.ShowDialog();
             this.Close();
 
         }

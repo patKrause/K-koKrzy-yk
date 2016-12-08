@@ -253,7 +253,7 @@
             // 
             this.O.AutoSize = true;
             this.O.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.O.Location = new System.Drawing.Point(24, 12);
+            this.O.Location = new System.Drawing.Point(19, 12);
             this.O.Name = "O";
             this.O.Size = new System.Drawing.Size(39, 33);
             this.O.TabIndex = 19;
@@ -263,7 +263,7 @@
             // 
             this.X.AutoSize = true;
             this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.X.Location = new System.Drawing.Point(369, 12);
+            this.X.Location = new System.Drawing.Point(357, 12);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(35, 33);
             this.X.TabIndex = 20;
