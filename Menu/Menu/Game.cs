@@ -102,12 +102,12 @@ namespace Menu
                 string wygrany = "";
                 if (ruch)
                 {
-                    wygrany = "O";
+                    wygrany = nick1.Text;
                     p1.Text = (Int32.Parse(p1.Text) + 1).ToString();
                 }
                 else
                 {
-                    wygrany = "X";
+                    wygrany = nick2.Text;
                     p2.Text = (Int32.Parse(p2.Text) + 1).ToString();
                 }
                 MessageBox.Show(wygrany + " Wygrał", "Finito!");
@@ -134,7 +134,7 @@ namespace Menu
                     Button b = (Button)x;
                     b.Enabled = true;
                     b.BackColor = System.Drawing.Color.Transparent;
-                    b.Text = "";
+                    if (b.Text == "Restart") b.Text = "Restart"; else b.Text = "";
                     tura = 0;
                 }
             }

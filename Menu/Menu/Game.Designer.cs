@@ -42,9 +42,9 @@
             this.liczRemis = new System.Windows.Forms.Label();
             this.p1 = new System.Windows.Forms.Label();
             this.p2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nick2 = new System.Windows.Forms.TextBox();
             this.Restart = new System.Windows.Forms.Button();
+            this.nick1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // A1
@@ -176,19 +176,14 @@
             this.p2.TabIndex = 12;
             this.p2.Text = "0";
             // 
-            // textBox1
+            // nick2
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(81, 20);
-            this.textBox1.TabIndex = 13;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(341, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 20);
-            this.textBox2.TabIndex = 14;
+            this.nick2.Location = new System.Drawing.Point(341, 27);
+            this.nick2.Name = "nick2";
+            this.nick2.Size = new System.Drawing.Size(81, 20);
+            this.nick2.TabIndex = 14;
+            this.nick2.Text = "Gracz2";
+            this.nick2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Restart
             // 
@@ -200,15 +195,24 @@
             this.Restart.UseVisualStyleBackColor = true;
             this.Restart.Click += new System.EventHandler(this.wynikRestart);
             // 
+            // nick1
+            // 
+            this.nick1.Location = new System.Drawing.Point(13, 27);
+            this.nick1.Name = "nick1";
+            this.nick1.Size = new System.Drawing.Size(81, 20);
+            this.nick1.TabIndex = 16;
+            this.nick1.Text = "Gracz1";
+            this.nick1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(434, 292);
+            this.Controls.Add(this.nick1);
             this.Controls.Add(this.Restart);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nick2);
             this.Controls.Add(this.p2);
             this.Controls.Add(this.p1);
             this.Controls.Add(this.liczRemis);
@@ -250,8 +254,8 @@
         private System.Windows.Forms.Label liczRemis;
         private System.Windows.Forms.Label p1;
         private System.Windows.Forms.Label p2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nick2;
         private System.Windows.Forms.Button Restart;
+        private System.Windows.Forms.TextBox nick1;
     }
 }
