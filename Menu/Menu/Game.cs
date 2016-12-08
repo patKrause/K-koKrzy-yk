@@ -118,7 +118,7 @@ namespace Menu
                 if (tura == 9)
                 {
                     MessageBox.Show("Remis!", "Opps!");
-
+                    liczRemis.Text = (Int32.Parse(liczRemis.Text) + 1).ToString();
                 }
             }
             
