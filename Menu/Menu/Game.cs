@@ -140,16 +140,32 @@ namespace Menu
             }
         }
 
-        private void Game_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void wynikRestart(object sender, EventArgs e)
         {
             p1.Text = "0";
             p2.Text = "0";
             liczRemis.Text = "0";
+        }
+
+        private void pokazWej(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (ruch)
+                b.Text = "X";
+                else
+                b.Text = "O";
+            
+        }
+
+        private void ukryjWej(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (ruch)
+                b.Text = "";
+            else
+                b.Text = "";
+
         }
     }
 }
