@@ -121,5 +121,10 @@ namespace Menu
                 tura = 0;
             }
         }
+
+        private void Game_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

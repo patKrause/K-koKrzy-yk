@@ -38,6 +38,12 @@
             this.C1 = new System.Windows.Forms.Button();
             this.C2 = new System.Windows.Forms.Button();
             this.C3 = new System.Windows.Forms.Button();
+            this.Remis = new System.Windows.Forms.Label();
+            this.liczRemis = new System.Windows.Forms.Label();
+            this.p1 = new System.Windows.Forms.Label();
+            this.p2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // A1
@@ -130,12 +136,71 @@
             this.C3.UseVisualStyleBackColor = true;
             this.C3.Click += new System.EventHandler(this.click_click);
             // 
+            // Remis
+            // 
+            this.Remis.AutoSize = true;
+            this.Remis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Remis.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.Remis.Location = new System.Drawing.Point(177, 265);
+            this.Remis.Name = "Remis";
+            this.Remis.Size = new System.Drawing.Size(56, 16);
+            this.Remis.TabIndex = 9;
+            this.Remis.Text = "Remis:";
+            // 
+            // liczRemis
+            // 
+            this.liczRemis.AutoSize = true;
+            this.liczRemis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.liczRemis.Location = new System.Drawing.Point(242, 266);
+            this.liczRemis.Name = "liczRemis";
+            this.liczRemis.Size = new System.Drawing.Size(14, 15);
+            this.liczRemis.TabIndex = 10;
+            this.liczRemis.Text = "0";
+            // 
+            // p1
+            // 
+            this.p1.AutoSize = true;
+            this.p1.Location = new System.Drawing.Point(39, 73);
+            this.p1.Name = "p1";
+            this.p1.Size = new System.Drawing.Size(13, 13);
+            this.p1.TabIndex = 11;
+            this.p1.Text = "0";
+            // 
+            // p2
+            // 
+            this.p2.AutoSize = true;
+            this.p2.Location = new System.Drawing.Point(376, 73);
+            this.p2.Name = "p2";
+            this.p2.Size = new System.Drawing.Size(13, 13);
+            this.p2.TabIndex = 12;
+            this.p2.Text = "0";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(81, 20);
+            this.textBox1.TabIndex = 13;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(341, 27);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(81, 20);
+            this.textBox2.TabIndex = 14;
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(434, 262);
+            this.ClientSize = new System.Drawing.Size(434, 292);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.p2);
+            this.Controls.Add(this.p1);
+            this.Controls.Add(this.liczRemis);
+            this.Controls.Add(this.Remis);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.C2);
             this.Controls.Add(this.C1);
@@ -152,7 +217,9 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kółko&Krzyżyk";
+            this.Load += new System.EventHandler(this.Game_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -167,5 +234,11 @@
         private System.Windows.Forms.Button C1;
         private System.Windows.Forms.Button C2;
         private System.Windows.Forms.Button C3;
+        private System.Windows.Forms.Label Remis;
+        private System.Windows.Forms.Label liczRemis;
+        private System.Windows.Forms.Label p1;
+        private System.Windows.Forms.Label p2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
