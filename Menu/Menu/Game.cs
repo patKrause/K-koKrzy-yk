@@ -33,7 +33,7 @@ namespace Menu
 
 
             sprawdzKtoWygr();
-            if (tura == 9) MessageBox.Show("Remis!", "Opps!");
+            
             
         }
         private void sprawdzKtoWygr()
@@ -101,11 +101,25 @@ namespace Menu
             {
                 string wygrany = "";
                 if (ruch)
+                {
                     wygrany = "O";
+                    p1.Text = (Int32.Parse(p1.Text) + 1).ToString();
+                }
                 else
+                {
                     wygrany = "X";
+                    p2.Text = (Int32.Parse(p2.Text) + 1).ToString();
+                }
                 MessageBox.Show(wygrany + " Wygrał", "Finito!");
                 zerowanie();
+            }
+            else
+            {
+                if (tura == 9)
+                {
+                    MessageBox.Show("Remis!", "Opps!");
+
+                }
             }
             
 
@@ -114,11 +128,14 @@ namespace Menu
         {
             foreach (Control x in Controls)
             {
-                Button b = (Button)x;
-                b.Enabled = true;
-                b.BackColor = System.Drawing.Color.Transparent;
-                b.Text = "";
-                tura = 0;
+                if (x is Button)
+                {
+                    Button b = (Button)x;
+                    b.Enabled = true;
+                    b.BackColor = System.Drawing.Color.Transparent;
+                    b.Text = "";
+                    tura = 0;
+                }
             }
         }
 
