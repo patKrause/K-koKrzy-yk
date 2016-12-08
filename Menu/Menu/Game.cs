@@ -134,7 +134,9 @@ namespace Menu
                     Button b = (Button)x;
                     b.Enabled = true;
                     b.BackColor = System.Drawing.Color.Transparent;
-                    if (b.Text == "Restart") b.Text = "Restart"; else b.Text = "";
+                    if (b.Text == "Restart") continue;
+                    if (b.Text == "Powrót") continue;
+                    b.Text = "";
                     tura = 0;
                 }
             }
@@ -171,6 +173,15 @@ namespace Menu
                 else
                     b.Text = "";
             }
+
+        }
+
+        private void Powrot_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Menu form2 = new Menu();
+            form2.ShowDialog();
+            this.Close();
 
         }
 

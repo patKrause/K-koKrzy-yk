@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.O = new System.Windows.Forms.Label();
             this.X = new System.Windows.Forms.Label();
+            this.Powrot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // A1
@@ -268,12 +269,23 @@
             this.X.TabIndex = 20;
             this.X.Text = "X";
             // 
+            // Powrot
+            // 
+            this.Powrot.Location = new System.Drawing.Point(347, 257);
+            this.Powrot.Name = "Powrot";
+            this.Powrot.Size = new System.Drawing.Size(75, 23);
+            this.Powrot.TabIndex = 21;
+            this.Powrot.Text = "Powrót";
+            this.Powrot.UseVisualStyleBackColor = true;
+            this.Powrot.Click += new System.EventHandler(this.Powrot_Click);
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(434, 292);
+            this.Controls.Add(this.Powrot);
             this.Controls.Add(this.X);
             this.Controls.Add(this.O);
             this.Controls.Add(this.label2);
@@ -328,5 +340,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label O;
         private System.Windows.Forms.Label X;
+        private System.Windows.Forms.Button Powrot;
     }
 }
