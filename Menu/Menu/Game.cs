@@ -205,10 +205,17 @@ namespace Menu
             ustaw = wygrajZablokuj("O");
             if (ustaw == null)
             {
-                ustaw = wolneMiejsce();
-            }
+                    ustaw = doKata();
+                    if (ustaw == null)
+                    {
+                        ustaw = wolneMiejsce();
+                    }
+                }
             ustaw.PerformClick();
-        }
+         }
+    
+            
+        
         private Button wygrajZablokuj(string znak)
         {
             //POZIOMO
@@ -280,6 +287,10 @@ namespace Menu
             }
 
          return null;
+        }
+        private Button doKata()
+        {
+            return null;
         }
     }
 }
