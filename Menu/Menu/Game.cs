@@ -211,7 +211,23 @@ namespace Menu
         }
         private Button wygrajZablokuj(string znak)
         {
-            if ((A1.Text == B1.Text) && (B1.Text == znak) && (C1.Text == "")) return C1;
+            if ((A1.Text == znak) && (A2.Text == znak) && (A3.Text == ""))
+            return A3;
+            if ((A2.Text == znak) && (A3.Text == znak) && (A1.Text == ""))
+            return A1;
+            if ((A1.Text == znak) && (A3.Text == znak) && (A2.Text == ""))
+            return A2;
+            /*if ((C1.Text == B1.Text) && (B1.Text == znak) && (A1.Text == "")) return A1;
+            else
+            if ((C2.Text == B2.Text) && (B2.Text == znak) && (A2.Text == "")) return A2;
+            else
+            if ((C3.Text == B3.Text) && (B3.Text == znak) && (A3.Text == "")) return A3;
+            else
+            if ((B1.Text == B1.Text) && (B1.Text == znak) && (A1.Text == "")) return A1;
+            else
+            if ((B2.Text == B2.Text) && (B2.Text == znak) && (A2.Text == "")) return A2;
+            else
+            if ((B3.Text == B3.Text) && (B3.Text == znak) && (A3.Text == "")) return A3;*/
             return null;
         }
         private Button wolneMiejsce()
