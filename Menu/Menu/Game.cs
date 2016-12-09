@@ -13,6 +13,7 @@ namespace Menu
     public partial class Game : Form
     {
         bool ruch = true;
+        bool komp = false;
         int tura = 0;
         public Game()
         {
@@ -33,6 +34,11 @@ namespace Menu
 
 
             sprawdzKtoWygr();
+            czyKomp();
+            if ((!ruch) && (komp))
+            {
+                ruchKomp();
+            }
         }
         private void sprawdzKtoWygr()
         {
@@ -183,12 +189,45 @@ namespace Menu
             this.Visible = false;
             Menu form1 = new Menu();
             form1.ShowDialog();
+            
             this.Close();
 
         }
 
+        private void czyKomp()
+        {
+            if (nick2.Text == "Komputer") komp = true; else komp = false;
+        }
 
+        private void ruchKomp()
+        {
+            Button ustaw = null;
+            ustaw = wygrajZablokuj("O");
+            if (ustaw == null)
+            {
+                ustaw = wolneMiejsce();
+            }
+            ustaw.PerformClick();
+        }
+        private Button wygrajZablokuj(string znak)
+        {
+            if ((A1.Text == B1.Text) && (B1.Text == znak) && (C1.Text == "")) return C1;
+            return null;
+        }
+        private Button wolneMiejsce()
+        {
+            Button b = null;
+            foreach (Control c in Controls)
+            {
+                b = c as Button;
+                if (b != null)
+                {
+                    if (b.Text == "")
+                        return b;
+                }
+            }
 
- 
+            return null;
+        }
     }
 }
