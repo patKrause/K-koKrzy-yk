@@ -211,24 +211,58 @@ namespace Menu
         }
         private Button wygrajZablokuj(string znak)
         {
+            //POZIOMO
             if ((A1.Text == znak) && (A2.Text == znak) && (A3.Text == ""))
-            return A3;
+                return A3; 
             if ((A2.Text == znak) && (A3.Text == znak) && (A1.Text == ""))
-            return A1;
+                return A1; 
             if ((A1.Text == znak) && (A3.Text == znak) && (A2.Text == ""))
-            return A2;
+                return A2; 
             if ((B1.Text == znak) && (B2.Text == znak) && (B3.Text == ""))
-            return B3;
+                return B3; 
             if ((B2.Text == znak) && (B3.Text == znak) && (B1.Text == ""))
-            return B1;
+                return B1; 
             if ((B1.Text == znak) && (B3.Text == znak) && (B2.Text == ""))
-            return B2;
+                return B2; 
             if ((C1.Text == znak) && (C2.Text == znak) && (C3.Text == ""))
-            return C3;
+                return C3; 
             if ((C2.Text == znak) && (C3.Text == znak) && (C1.Text == ""))
-            return C1;
+                return C1; 
             if ((C1.Text == znak) && (C3.Text == znak) && (C2.Text == ""))
-            return C2;
+                return C2; 
+            //SKOS
+            if ((A1.Text == znak) && (B2.Text == znak) && (C3.Text == ""))
+                return C3;
+            if ((A3.Text == znak) && (B2.Text == znak) && (C1.Text == ""))
+                return C1;
+            if ((B2.Text == znak) && (C3.Text == znak) && (A1.Text == ""))
+                return A1;
+            if ((B2.Text == znak) && (C1.Text == znak) && (A3.Text == ""))
+                return A3;
+            if ((A1.Text == znak) && (C3.Text == znak) && (B2.Text == ""))
+                return B2;
+            if ((A3.Text == znak) && (C1.Text == znak) && (B2.Text == ""))
+                return B2;
+            // PION
+            if ((A1.Text == znak) && (B1.Text == znak) && (C1.Text == ""))
+                return C1;
+            if ((A1.Text == znak) && (C1.Text == znak) && (B1.Text == ""))
+                return B1;
+            if ((B1.Text == znak) && (C1.Text == znak) && (A1.Text == ""))
+                return A1;
+            if ((A2.Text == znak) && (B2.Text == znak) && (C2.Text == ""))
+                return C2;
+            if ((A2.Text == znak) && (C3.Text == znak) && (B2.Text == ""))
+                return B2;
+            if ((B2.Text == znak) && (C2.Text == znak) && (A2.Text == ""))
+                return A2;
+            if ((A3.Text == znak) && (B3.Text == znak) && (C3.Text == ""))
+                return C3;
+            if ((A3.Text == znak) && (C3.Text == znak) && (B3.Text == ""))
+                return B3;
+            if ((B3.Text == znak) && (C3.Text == znak) && (A3.Text == ""))
+                return A3; 
+           
             
             return null;
         }
