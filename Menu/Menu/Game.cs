@@ -290,6 +290,7 @@ namespace Menu
         }
         private Button doKata()
         {
+            
             if (A1.Text == "O")
             {
                 if (C1.Text == "") return C1;
@@ -314,6 +315,10 @@ namespace Menu
                 if (A3.Text == "") return A3;
                 if (C1.Text == "") return C1;
             }
+            if (A1.Text == "") return A1;
+            if (A3.Text == "") return A3;
+            if (C1.Text == "") return C1;
+            if (C3.Text == "") return C3;
             return null;
         }
     }
