@@ -333,7 +333,7 @@
         private System.Windows.Forms.Label liczRemis;
         private System.Windows.Forms.Label p1;
         private System.Windows.Forms.Label p2;
-        private System.Windows.Forms.TextBox nick2;
+        public System.Windows.Forms.TextBox nick2;
         private System.Windows.Forms.Button Restart;
         private System.Windows.Forms.TextBox nick1;
         private System.Windows.Forms.Label w1;

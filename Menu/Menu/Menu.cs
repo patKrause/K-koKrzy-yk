@@ -12,6 +12,7 @@ namespace Menu
 {
     public partial class Menu : Form
     {
+        public int x = 0;
         public Menu()
         {
             InitializeComponent();
@@ -35,6 +36,19 @@ namespace Menu
             this.Close();
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Game form2 = new Game();
+            form2.nick2.Text = "Komputer";
+            form2.nick2.ReadOnly = true;
+            form2.ShowDialog();
+            
+            this.Close();
+
+        }
+
 
     }
 }
